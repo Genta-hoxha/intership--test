@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: rgb(238 238 238);
+    color: #333;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+#searchInput {
+    padding: 10px;
+    border-radius: 5px;
+    background: #f7f1f0;
+     }
+
+ .search-container {
+        position: relative;
+        display: inline-block;
+    }
+    
+    #searchInput {
+        width: 300px; 
+        padding: 10px 40px 10px 10px; 
+        font-size: 16px;
+        border: 2px solid rgb(38 39 97);
+        border-radius: 4px;
+    }
+    
+    .search-button {
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgb(38 39 97);
+        border: 2px solid rgb(38 39 97);
+        cursor: pointer;
+        padding: 0;
+    }
+    
+    .search-button img {
+        width: 35px;
+        height: 35px;
+    }
+    
+
+
+    footer {
+        background-color: rgb(89 100 210);
+        padding: 20px 0;
+        color: #fff;
+    }
+    .footer-top-text {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .footer-top-text p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    .footer-section {
+        flex: 1;
+        min-width: 220px;
+        margin: 10px;
+    }
+    
+    .footer-section h4 {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .get-in-touch p {
+        margin-bottom: 10px;
+   
+    }
+    
+    .social-icons a {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .newsletter form {
+        display: flex;
+        align-items: center;
+    }
+    
+    .newsletter input[type="email"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        flex: 1;
+    }
+    
+    .newsletter button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        border-radius: 4px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+    .newsletter button:hover {
+        background-color: #555;
+    }
+    
+ 
+
+
+
+    
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
+
+main {
+    padding: 20px;
+}
+
+#top-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+#top-section h2 {
+    font-size: 24px;
+}
+
+#top-section p {
+    font-size: 16px;
+}
+
+
+#three-images-section {
+    padding: 20px;
+}
+
+#three-images-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+}
+
+
+#flex-section {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+#flex-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background-color: #ccc;
+    padding: 20px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+#carousel-section {
+    padding: 20px;
+}
+
+.glide {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.glide__slide img {
+    width: 100%;
+    height: auto;
+}
