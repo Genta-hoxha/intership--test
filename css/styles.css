@@ -190,8 +190,19 @@ main {
 }
 
 
+#five-images-section {
+    padding: 20px;
+    margin: 0 19%;
+}
+
+#five-images-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 #three-images-section {
     padding: 20px;
+    margin: 0 19%;
 }
 
 #three-images-section h2 {
@@ -199,42 +210,82 @@ main {
     font-size: 24px;
     margin-bottom: 20px;
 }
-
 .image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.image-grid3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.image-grid img {
+.image-item img {
     width: 100%;
     height: auto;
 }
 
-
-#flex-section {
-    padding: 20px;
-    background-color: #f8f8f8;
-}
-
-#flex-section h2 {
+.image-item p {
     text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    color: rgb(93, 93, 93);
+    margin-bottom: 10px;
 }
-
-.flex-container {
+.image-item h5 {
+    text-align: center;
+    color: rgb(93, 93, 93);
+    margin-bottom: 10px;
+}
+.image-shop {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
-
-.flex-item {
-    background-color: #ccc;
-    padding: 20px;
-    flex: 1;
-    margin: 0 10px;
+.image-grid3 .image-item p {
+    font-size: 10px;
+    font-weight: 900;
+}
+#three-images-section h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.button-item {
+ 
+    background-color: rgb(89 100 210);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-item button {
+    background-color: transparent;
+    border-color: transparent;
+    color: #fff;
     text-align: center;
 }
+.image-shop button {
+    background-color: rgb(89 100 210);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+}
+
 
 #carousel-section {
     padding: 20px;
