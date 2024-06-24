@@ -11,10 +11,15 @@ body {
 
 
 header {
-    background-color: rgb(238 238 238);
+    background-color: rgb(249 249 249);
     color: #333;
     padding: 1em 0;
     text-align: center;
+}
+
+
+header .logo img {
+    height: 40px;
 }
 
 header nav ul {
@@ -286,17 +291,142 @@ main {
     height: auto;
 }
 
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin: 0 19%;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap:10px;
+}
+.carousel-item {
+    flex: 0 0 20%; /* 5 produkte te shfaqen(100% / 5 = 20%) */
+    max-width: 19%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+.carousel-item img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.carousel-item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+.carousel-item p {
+    margin: 5px 0;
+    color: #333;
+}
+.carousel-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0056b3;
+}
+ 
+.carousel-nav button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    pointer-events: all;
+    cursor: pointer;
+    color: #333;
+} 
 
-#carousel-section {
+.carousel-section {
     padding: 20px;
+    background-color: rgb(249 249 249);
+    text-align: center;
 }
-
-.glide {
-    width: 100%;
+.carousel-section h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
     margin: 0 auto;
+    width: 60%;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap:10px;
+}
+.carousel-item {
+    flex: 0 0 20%; /* 5 items in the view (100% / 5 = 20%) */
+    max-width: 19%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+.carousel-item img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.carousel-item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+.carousel-item p {
+    margin: 5px 0;
+    color: #333;
+}
+.carousel-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0056b3;
+}
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 20px auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+.carousel-nav button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+.carousel-nav button i {
+    font-size: 20px; 
+}
+.carousel-nav button:hover {
+    background-color: #ddd;
 }
 
-.glide__slide img {
-    width: 100%;
-    height: auto;
+.carousel-indicators {
+    text-align: center;
+    margin-top: 20px;
+}
+.carousel-indicators button {
+    background: #ccc;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.carousel-indicators button.active {
+    background: #333;
 }
